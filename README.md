@@ -1,4 +1,7 @@
 # openapi-typescript-validator
+> [!IMPORTANT]
+> This is a modified fork for TMPLT needs.
+> 
 Generate typescript with `ajv >= 8.0.0` validation based on openapi schemas
 
 - [What does this do?](#what-does-this-do)

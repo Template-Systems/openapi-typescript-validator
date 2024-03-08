@@ -49,6 +49,8 @@ const decodersFileTemplate = `
 /* eslint-disable */
 
 import Ajv from 'ajv';
+import addFormats  from "ajv-formats";
+
 $Imports
 import { Decoder } from './helpers';
 import { validateJson } from './validate';
@@ -56,6 +58,8 @@ import { $ModelImports } from './models';
 import jsonSchema from './schema.json';
 
 export const ajv = new Ajv({ strict: false });
+export const formats = addFormats(ajv, undefined);
+
 $Formats
 ajv.compile(jsonSchema);
 

@@ -24,6 +24,8 @@ export async function generate(options: GenerateOptions) {
     `Start generating files for ${schemaType} schema: ${schemaFile}`
   );
 
+  console.info('FORKED VERSION TMPLT')
+
   const schema = await parseSchema(schemaFile, schemaType);
 
   const allDefinitions = Object.keys(schema.definitions);
